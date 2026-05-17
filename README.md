@@ -113,6 +113,10 @@ Ollama can be configured using environment variables:
 | `OLLAMA_NUM_PARALLEL` | Max parallel requests | `1` |
 | `OLLAMA_MAX_LOADED_MODELS` | Max models loaded in memory | `1` |
 
+> **Personal note:** I typically set `OLLAMA_KEEP_ALIVE=30m` and `OLLAMA_NUM_PARALLEL=4` in my environment
+> since I'm running this on a machine with 32GB RAM and frequently switch between prompts. Adjust these
+> values based on your available memory.
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or pull request on GitHub.
