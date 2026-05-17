@@ -112,10 +112,14 @@ Ollama can be configured using environment variables:
 | `OLLAMA_KEEP_ALIVE` | Duration to keep models in memory | `5m` |
 | `OLLAMA_NUM_PARALLEL` | Max parallel requests | `1` |
 | `OLLAMA_MAX_LOADED_MODELS` | Max models loaded in memory | `1` |
+| `OLLAMA_DEBUG` | Enable debug logging | `false` |
 
 > **Personal note:** I typically set `OLLAMA_KEEP_ALIVE=30m` and `OLLAMA_NUM_PARALLEL=4` in my environment
 > since I'm running this on a machine with 32GB RAM and frequently switch between prompts. Adjust these
 > values based on your available memory.
+>
+> I also find `OLLAMA_DEBUG=true` helpful when troubleshooting model loading issues — it surfaces a lot
+> of useful info about layer offloading and memory allocation.
 
 ## Contributing
 
@@ -125,4 +129,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License. See [LICEN
